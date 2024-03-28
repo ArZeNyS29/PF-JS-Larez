@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos || TynaPets</title>
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar fixed-top sticky-top bg-body-tertiary" style="padding-top: 20px; padding-bottom: 20px;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="font-size: 30px;">
+            <img src="./assets/tynapets_logo.jpg" alt="Logo" width="40" height="32" class="d-inline-block align-text-top">
+            TynaPets
+        </a>
+        <div class="m-2">
+          <button id="carrito" type="button" class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+              </svg>
+          </button>
+        </div>
+    </div>
+</nav>
+      <h1 class="p-2">Catalogo Productos</h1>
+      <div id="listado">
+            <div id="cards" class="row">
+                
+            </div>
+      </div>
+      <button onclick="verCart()">Ver Carrito</button>
+      <button onclick="eraseCart()">Borrar Carrito</button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Lista de Compra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Producto</th>
+              <th scope="col"></th>
+              <th scope="col">Precio</th>
+            </tr>
+            <tbody id="listCarrito">
+
+            </tbody>
+            <tr>
+              <th scope="col">Total</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col" id="totalCart"></th>
+            </tr>
+          </thead>
+        </table>
+        <button type="button" id="compraExitosa" class="btn btn-success btn-sm me-md-2">Realizar Pedido</button>
+        <button type="button" id="borrarCarrito" class="btn btn-danger btn-sm me-md-2">Vaciar Carrito</button>
+      </div>
+      <script src="./js/main.js"></script>
+      <script src="./js/carrito.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

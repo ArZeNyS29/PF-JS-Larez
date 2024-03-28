@@ -1,0 +1,8 @@
+[
+    {"id":1,"nombre":"Royal Canin Mini Adulto 1KG","precio":8000,"img":"https://www.elcomedero.com.ar/wp-content/uploads/2019/05/mini-adult.png"},
+    {"id":2,"nombre":"Royal Canin Kitten 1,5KG","precio":10300,"img":"https://peluditos.ec/cdn/shop/products/Kitten.png?v=1670541432&width=1080"},
+    {"id":3,"nombre":"GoloCan 500gr","precio":6800,"img":"https://traviesospetshop.com.ar/wp-content/uploads/2023/04/PARA-PAGINA-WEB-3.png"},
+    {"id":4,"nombre":"Excellent Gato Adulto 1KG","precio":7800,"img":"https://acdn.mitiendanube.com/stores/001/777/737/products/excellent-cat-adult1-1aa838b89d385b63e116921322555056-1024-1024.png"},
+    {"id":5,"nombre":"Bark Arnes Rojo S","precio":24500,"img":"https://acdn.mitiendanube.com/stores/001/033/243/products/mi-proyecto-811-a6b77a6d544789421716769884947869-1024-1024.png"},
+    {"id":6,"nombre":"Bravecto 10KG","precio":4300,"img":"https://pancitas.com.ar/web/image/product.template/1192/image_1024?unique=e048ced"}
+]
